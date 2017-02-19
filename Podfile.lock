@@ -1,0 +1,15 @@
+PODS:
+  - iOS-color-wheel (0.1)
+  - SwiftHSVColorPicker (1.1.1)
+
+DEPENDENCIES:
+  - iOS-color-wheel (~> 0.1)
+  - SwiftHSVColorPicker
+
+SPEC CHECKSUMS:
+  iOS-color-wheel: 60d441600bd62d58250a915719b84ed89283ce95
+  SwiftHSVColorPicker: 69c9028dea168e0f8ee2439d31a899cf1df95678
+
+PODFILE CHECKSUM: 496a1a389df085f5ac112a78c772712fa8170a44
+
+COCOAPODS: 1.2.0

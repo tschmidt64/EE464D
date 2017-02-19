@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		733A76114576828C35FF1F6E /* Pods_Music_Lamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0775EBD39ED96FDDCCD015F2 /* Pods_Music_Lamp.framework */; };
+		822002851E52C3320099627F /* AddAlarmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822002841E52C3320099627F /* AddAlarmTableViewController.swift */; };
+		82279DC41E522DB60036436D /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82279DC31E522DB60036436D /* AlarmTableViewCell.swift */; };
+		82279DC61E5231D20036436D /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82279DC51E5231D20036436D /* Alarm.swift */; };
+		82C6077C1E483097009E614A /* AlarmsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C6077B1E483097009E614A /* AlarmsTableViewController.swift */; };
+		82C6077E1E4833AC009E614A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C6077D1E4833AC009E614A /* TabBarViewController.swift */; };
+		82C607821E4842FC009E614A /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C607811E4842FC009E614A /* ColorPickerViewController.swift */; };
+		82C9962D1E4023C000C8FB62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C9962C1E4023C000C8FB62 /* AppDelegate.swift */; };
+		82C996341E4023C000C8FB62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C996321E4023C000C8FB62 /* Main.storyboard */; };
+		82C996361E4023C000C8FB62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82C996351E4023C000C8FB62 /* Assets.xcassets */; };
+		82C996391E4023C000C8FB62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82C996371E4023C000C8FB62 /* LaunchScreen.storyboard */; };
+		82C996441E4023C000C8FB62 /* Music_LampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C996431E4023C000C8FB62 /* Music_LampTests.swift */; };
+		82C9964F1E4023C000C8FB62 /* Music_LampUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C9964E1E4023C000C8FB62 /* Music_LampUITests.swift */; };
+		82E41DF31E524BA1002E7A94 /* AlarmsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E41DF21E524BA1002E7A94 /* AlarmsNavigationController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82C996401E4023C000C8FB62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82C996211E4023C000C8FB62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82C996281E4023C000C8FB62;
+			remoteInfo = "Music Lamp";
+		};
+		82C9964B1E4023C000C8FB62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82C996211E4023C000C8FB62 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 82C996281E4023C000C8FB62;
+			remoteInfo = "Music Lamp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0775EBD39ED96FDDCCD015F2 /* Pods_Music_Lamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Music_Lamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53B172E1D71F3E813EA4C821 /* Pods_Music_LampTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Music_LampTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B6DEE2E78A0C9865BEF6180 /* Pods-Music Lamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Music Lamp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Music Lamp/Pods-Music Lamp.release.xcconfig"; sourceTree = "<group>"; };
+		822002841E52C3320099627F /* AddAlarmTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAlarmTableViewController.swift; sourceTree = "<group>"; };
+		82279DC31E522DB60036436D /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		82279DC51E5231D20036436D /* Alarm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
+		82C6077B1E483097009E614A /* AlarmsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmsTableViewController.swift; sourceTree = "<group>"; };
+		82C6077D1E4833AC009E614A /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		82C607811E4842FC009E614A /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
+		82C996291E4023C000C8FB62 /* Music Lamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music Lamp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C9962C1E4023C000C8FB62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		82C996331E4023C000C8FB62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		82C996351E4023C000C8FB62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82C996381E4023C000C8FB62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82C9963A1E4023C000C8FB62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82C9963F1E4023C000C8FB62 /* Music LampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Music LampTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C996431E4023C000C8FB62 /* Music_LampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_LampTests.swift; sourceTree = "<group>"; };
+		82C996451E4023C000C8FB62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82C9964A1E4023C000C8FB62 /* Music LampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Music LampUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82C9964E1E4023C000C8FB62 /* Music_LampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_LampUITests.swift; sourceTree = "<group>"; };
+		82C996501E4023C000C8FB62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82E41DF21E524BA1002E7A94 /* AlarmsNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmsNavigationController.swift; sourceTree = "<group>"; };
+		9A0887A2CCC6F84CADC3741A /* Pods-Music Lamp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Music Lamp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Music Lamp/Pods-Music Lamp.debug.xcconfig"; sourceTree = "<group>"; };
+		B8929C9D1AE6A6971C2EA1C1 /* Pods_Music_LampUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Music_LampUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82C996261E4023C000C8FB62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				733A76114576828C35FF1F6E /* Pods_Music_Lamp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C9963C1E4023C000C8FB62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C996471E4023C000C8FB62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ABBF59C4949EB7C5E85AA9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9A0887A2CCC6F84CADC3741A /* Pods-Music Lamp.debug.xcconfig */,
+				5B6DEE2E78A0C9865BEF6180 /* Pods-Music Lamp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2E5ACA8E5A50ACD2A6758C8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0775EBD39ED96FDDCCD015F2 /* Pods_Music_Lamp.framework */,
+				53B172E1D71F3E813EA4C821 /* Pods_Music_LampTests.framework */,
+				B8929C9D1AE6A6971C2EA1C1 /* Pods_Music_LampUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82C996201E4023C000C8FB62 = {
+			isa = PBXGroup;
+			children = (
+				82C9962B1E4023C000C8FB62 /* Music Lamp */,
+				82C996421E4023C000C8FB62 /* Music LampTests */,
+				82C9964D1E4023C000C8FB62 /* Music LampUITests */,
+				82C9962A1E4023C000C8FB62 /* Products */,
+				0ABBF59C4949EB7C5E85AA9B /* Pods */,
+				2E5ACA8E5A50ACD2A6758C8D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		82C9962A1E4023C000C8FB62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82C996291E4023C000C8FB62 /* Music Lamp.app */,
+				82C9963F1E4023C000C8FB62 /* Music LampTests.xctest */,
+				82C9964A1E4023C000C8FB62 /* Music LampUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82C9962B1E4023C000C8FB62 /* Music Lamp */ = {
+			isa = PBXGroup;
+			children = (
+				82C9962C1E4023C000C8FB62 /* AppDelegate.swift */,
+				82C996321E4023C000C8FB62 /* Main.storyboard */,
+				82279DC51E5231D20036436D /* Alarm.swift */,
+				82279DC31E522DB60036436D /* AlarmTableViewCell.swift */,
+				82C996351E4023C000C8FB62 /* Assets.xcassets */,
+				82C996371E4023C000C8FB62 /* LaunchScreen.storyboard */,
+				82C9963A1E4023C000C8FB62 /* Info.plist */,
+				82C6077B1E483097009E614A /* AlarmsTableViewController.swift */,
+				82E41DF21E524BA1002E7A94 /* AlarmsNavigationController.swift */,
+				822002841E52C3320099627F /* AddAlarmTableViewController.swift */,
+				82C6077D1E4833AC009E614A /* TabBarViewController.swift */,
+				82C607811E4842FC009E614A /* ColorPickerViewController.swift */,
+			);
+			path = "Music Lamp";
+			sourceTree = "<group>";
+		};
+		82C996421E4023C000C8FB62 /* Music LampTests */ = {
+			isa = PBXGroup;
+			children = (
+				82C996431E4023C000C8FB62 /* Music_LampTests.swift */,
+				82C996451E4023C000C8FB62 /* Info.plist */,
+			);
+			path = "Music LampTests";
+			sourceTree = "<group>";
+		};
+		82C9964D1E4023C000C8FB62 /* Music LampUITests */ = {
+			isa = PBXGroup;
+			children = (
+				82C9964E1E4023C000C8FB62 /* Music_LampUITests.swift */,
+				82C996501E4023C000C8FB62 /* Info.plist */,
+			);
+			path = "Music LampUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82C996281E4023C000C8FB62 /* Music Lamp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82C996531E4023C000C8FB62 /* Build configuration list for PBXNativeTarget "Music Lamp" */;
+			buildPhases = (
+				AE26462AEC85EF2D0159C342 /* [CP] Check Pods Manifest.lock */,
+				82C996251E4023C000C8FB62 /* Sources */,
+				82C996261E4023C000C8FB62 /* Frameworks */,
+				82C996271E4023C000C8FB62 /* Resources */,
+				169DC43F5289A88862009213 /* [CP] Embed Pods Frameworks */,
+				F898435D8A0C67862D3F74CF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Music Lamp";
+			productName = "Music Lamp";
+			productReference = 82C996291E4023C000C8FB62 /* Music Lamp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		82C9963E1E4023C000C8FB62 /* Music LampTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82C996561E4023C000C8FB62 /* Build configuration list for PBXNativeTarget "Music LampTests" */;
+			buildPhases = (
+				82C9963B1E4023C000C8FB62 /* Sources */,
+				82C9963C1E4023C000C8FB62 /* Frameworks */,
+				82C9963D1E4023C000C8FB62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82C996411E4023C000C8FB62 /* PBXTargetDependency */,
+			);
+			name = "Music LampTests";
+			productName = "Music LampTests";
+			productReference = 82C9963F1E4023C000C8FB62 /* Music LampTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		82C996491E4023C000C8FB62 /* Music LampUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82C996591E4023C000C8FB62 /* Build configuration list for PBXNativeTarget "Music LampUITests" */;
+			buildPhases = (
+				82C996461E4023C000C8FB62 /* Sources */,
+				82C996471E4023C000C8FB62 /* Frameworks */,
+				82C996481E4023C000C8FB62 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82C9964C1E4023C000C8FB62 /* PBXTargetDependency */,
+			);
+			name = "Music LampUITests";
+			productName = "Music LampUITests";
+			productReference = 82C9964A1E4023C000C8FB62 /* Music LampUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82C996211E4023C000C8FB62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Taylor Schmidt";
+				TargetAttributes = {
+					82C996281E4023C000C8FB62 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4G9Y57SZLT;
+						ProvisioningStyle = Automatic;
+					};
+					82C9963E1E4023C000C8FB62 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4G9Y57SZLT;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 82C996281E4023C000C8FB62;
+					};
+					82C996491E4023C000C8FB62 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4G9Y57SZLT;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 82C996281E4023C000C8FB62;
+					};
+				};
+			};
+			buildConfigurationList = 82C996241E4023C000C8FB62 /* Build configuration list for PBXProject "Music Lamp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 82C996201E4023C000C8FB62;
+			productRefGroup = 82C9962A1E4023C000C8FB62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82C996281E4023C000C8FB62 /* Music Lamp */,
+				82C9963E1E4023C000C8FB62 /* Music LampTests */,
+				82C996491E4023C000C8FB62 /* Music LampUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82C996271E4023C000C8FB62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C996391E4023C000C8FB62 /* LaunchScreen.storyboard in Resources */,
+				82C996361E4023C000C8FB62 /* Assets.xcassets in Resources */,
+				82C996341E4023C000C8FB62 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C9963D1E4023C000C8FB62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C996481E4023C000C8FB62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		169DC43F5289A88862009213 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Music Lamp/Pods-Music Lamp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE26462AEC85EF2D0159C342 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F898435D8A0C67862D3F74CF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Music Lamp/Pods-Music Lamp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82C996251E4023C000C8FB62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C6077C1E483097009E614A /* AlarmsTableViewController.swift in Sources */,
+				82C607821E4842FC009E614A /* ColorPickerViewController.swift in Sources */,
+				82E41DF31E524BA1002E7A94 /* AlarmsNavigationController.swift in Sources */,
+				822002851E52C3320099627F /* AddAlarmTableViewController.swift in Sources */,
+				82279DC61E5231D20036436D /* Alarm.swift in Sources */,
+				82C9962D1E4023C000C8FB62 /* AppDelegate.swift in Sources */,
+				82C6077E1E4833AC009E614A /* TabBarViewController.swift in Sources */,
+				82279DC41E522DB60036436D /* AlarmTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C9963B1E4023C000C8FB62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C996441E4023C000C8FB62 /* Music_LampTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82C996461E4023C000C8FB62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82C9964F1E4023C000C8FB62 /* Music_LampUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82C996411E4023C000C8FB62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82C996281E4023C000C8FB62 /* Music Lamp */;
+			targetProxy = 82C996401E4023C000C8FB62 /* PBXContainerItemProxy */;
+		};
+		82C9964C1E4023C000C8FB62 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 82C996281E4023C000C8FB62 /* Music Lamp */;
+			targetProxy = 82C9964B1E4023C000C8FB62 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		82C996321E4023C000C8FB62 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82C996331E4023C000C8FB62 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		82C996371E4023C000C8FB62 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82C996381E4023C000C8FB62 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82C996511E4023C000C8FB62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		82C996521E4023C000C8FB62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82C996541E4023C000C8FB62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A0887A2CCC6F84CADC3741A /* Pods-Music Lamp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4G9Y57SZLT;
+				INFOPLIST_FILE = "Music Lamp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tschmidt.Music-Lamp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		82C996551E4023C000C8FB62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B6DEE2E78A0C9865BEF6180 /* Pods-Music Lamp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4G9Y57SZLT;
+				INFOPLIST_FILE = "Music Lamp/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tschmidt.Music-Lamp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		82C996571E4023C000C8FB62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4G9Y57SZLT;
+				INFOPLIST_FILE = "Music LampTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tschmidt.Music-LampTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Music Lamp.app/Music Lamp";
+			};
+			name = Debug;
+		};
+		82C996581E4023C000C8FB62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4G9Y57SZLT;
+				INFOPLIST_FILE = "Music LampTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tschmidt.Music-LampTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Music Lamp.app/Music Lamp";
+			};
+			name = Release;
+		};
+		82C9965A1E4023C000C8FB62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4G9Y57SZLT;
+				INFOPLIST_FILE = "Music LampUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tschmidt.Music-LampUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Music Lamp";
+			};
+			name = Debug;
+		};
+		82C9965B1E4023C000C8FB62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4G9Y57SZLT;
+				INFOPLIST_FILE = "Music LampUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tschmidt.Music-LampUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Music Lamp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82C996241E4023C000C8FB62 /* Build configuration list for PBXProject "Music Lamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82C996511E4023C000C8FB62 /* Debug */,
+				82C996521E4023C000C8FB62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82C996531E4023C000C8FB62 /* Build configuration list for PBXNativeTarget "Music Lamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82C996541E4023C000C8FB62 /* Debug */,
+				82C996551E4023C000C8FB62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82C996561E4023C000C8FB62 /* Build configuration list for PBXNativeTarget "Music LampTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82C996571E4023C000C8FB62 /* Debug */,
+				82C996581E4023C000C8FB62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82C996591E4023C000C8FB62 /* Build configuration list for PBXNativeTarget "Music LampUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82C9965A1E4023C000C8FB62 /* Debug */,
+				82C9965B1E4023C000C8FB62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82C996211E4023C000C8FB62 /* Project object */;
+}
