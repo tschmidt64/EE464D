@@ -43,7 +43,7 @@ class AlarmsTableViewController: UITableViewController, AddAlarmDelegate {
         else { tableView.tableHeaderView = nil }
         // Get ahold of cell
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? AlarmTableViewCell else {
-            fatalError("The dequeued cell is not an instance of MealTableViewCell.")
+            fatalError("The dequeued cell is not an instance of AlarmTableViewCell.")
         }
         
         // Get ahold of alarm data at row row
@@ -71,22 +71,6 @@ class AlarmsTableViewController: UITableViewController, AddAlarmDelegate {
         return cell
     }
     
-    
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        super.prepare(for: segue, sender: sender)
-        guard let segueId = segue.identifier else { fatalError("Couldn't get segueID") }
-        switch segueId {
-        case "addAlarmSegue":
-            let navVC = segue.destination as! UINavigationController
-            let destVC = navVC.topViewController as! AddAlarmTableViewController
-            destVC.myDelegate = self
-        default:
-            fatalError("Incorrect switch statement value")
-            break
-        }
-    }
-    
     public func addAlarm(_ alarm: Alarm) {
         self.alarms.append(alarm)
         self.alarms.sort(by: { return $0.time < $1.time })
@@ -100,7 +84,7 @@ class AlarmsTableViewController: UITableViewController, AddAlarmDelegate {
     
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
-//        super.tableView(tableView, commit: editingStyle, forRowAt: indexPath)
+        //        super.tableView(tableView, commit: editingStyle, forRowAt: indexPath)
         if editingStyle == .delete {
             deleteAlarm(at: indexPath)
         }
@@ -126,7 +110,7 @@ class AlarmsTableViewController: UITableViewController, AddAlarmDelegate {
     }
     
     private func writeToUserDefaults() {
-//        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(alarms, toFile: Alarm.ArchiveURL.path) {
+        //        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(alarms, toFile: Alarm.ArchiveURL.path) {
         let success = NSKeyedArchiver.archiveRootObject(alarms, toFile: Alarm.ArchiveURL.path)
         if success {
             print("Alarms successfully saved")
@@ -139,5 +123,19 @@ class AlarmsTableViewController: UITableViewController, AddAlarmDelegate {
         return NSKeyedUnarchiver.unarchiveObject(withFile: Alarm.ArchiveURL.path) as? [Alarm]
     }
     
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard let segueId = segue.identifier else { fatalError("Couldn't get segueID") }
+        switch segueId {
+        case "addAlarmSegue":
+            let navVC = segue.destination as! UINavigationController
+            let destVC = navVC.topViewController as! AddAlarmTableViewController
+            destVC.myDelegate = self
+        default:
+            fatalError("Incorrect switch statement value")
+            break
+        }
+    }
 }
 

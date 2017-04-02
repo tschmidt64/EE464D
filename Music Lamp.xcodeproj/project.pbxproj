@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52F25ECC1E91A47E00855BF7 /* AddThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F25ECB1E91A47E00855BF7 /* AddThemeViewController.swift */; };
+		52F822991E898F670084E508 /* ThemeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F822981E898F670084E508 /* ThemeTableViewCell.swift */; };
+		52F8229B1E89909A0084E508 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8229A1E89909A0084E508 /* Theme.swift */; };
+		52F8229D1E89915E0084E508 /* ThemesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8229C1E89915E0084E508 /* ThemesTableViewController.swift */; };
+		52F8229F1E899D1D0084E508 /* AddThemeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F8229E1E899D1D0084E508 /* AddThemeTableViewController.swift */; };
 		733A76114576828C35FF1F6E /* Pods_Music_Lamp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0775EBD39ED96FDDCCD015F2 /* Pods_Music_Lamp.framework */; };
 		822002851E52C3320099627F /* AddAlarmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822002841E52C3320099627F /* AddAlarmTableViewController.swift */; };
 		82279DC41E522DB60036436D /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82279DC31E522DB60036436D /* AlarmTableViewCell.swift */; };
@@ -42,6 +47,11 @@
 
 /* Begin PBXFileReference section */
 		0775EBD39ED96FDDCCD015F2 /* Pods_Music_Lamp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Music_Lamp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52F25ECB1E91A47E00855BF7 /* AddThemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddThemeViewController.swift; sourceTree = "<group>"; };
+		52F822981E898F670084E508 /* ThemeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeTableViewCell.swift; sourceTree = "<group>"; };
+		52F8229A1E89909A0084E508 /* Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		52F8229C1E89915E0084E508 /* ThemesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemesTableViewController.swift; sourceTree = "<group>"; };
+		52F8229E1E899D1D0084E508 /* AddThemeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddThemeTableViewController.swift; sourceTree = "<group>"; };
 		53B172E1D71F3E813EA4C821 /* Pods_Music_LampTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Music_LampTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6DEE2E78A0C9865BEF6180 /* Pods-Music Lamp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Music Lamp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Music Lamp/Pods-Music Lamp.release.xcconfig"; sourceTree = "<group>"; };
 		822002841E52C3320099627F /* AddAlarmTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAlarmTableViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +125,7 @@
 		82C996201E4023C000C8FB62 = {
 			isa = PBXGroup;
 			children = (
+				52F25ECB1E91A47E00855BF7 /* AddThemeViewController.swift */,
 				82C9962B1E4023C000C8FB62 /* Music Lamp */,
 				82C996421E4023C000C8FB62 /* Music LampTests */,
 				82C9964D1E4023C000C8FB62 /* Music LampUITests */,
@@ -140,15 +151,19 @@
 				82C9962C1E4023C000C8FB62 /* AppDelegate.swift */,
 				82C996321E4023C000C8FB62 /* Main.storyboard */,
 				82279DC51E5231D20036436D /* Alarm.swift */,
+				52F8229A1E89909A0084E508 /* Theme.swift */,
 				82279DC31E522DB60036436D /* AlarmTableViewCell.swift */,
+				52F822981E898F670084E508 /* ThemeTableViewCell.swift */,
 				82C996351E4023C000C8FB62 /* Assets.xcassets */,
 				82C996371E4023C000C8FB62 /* LaunchScreen.storyboard */,
 				82C9963A1E4023C000C8FB62 /* Info.plist */,
 				82C6077B1E483097009E614A /* AlarmsTableViewController.swift */,
 				82E41DF21E524BA1002E7A94 /* AlarmsNavigationController.swift */,
 				822002841E52C3320099627F /* AddAlarmTableViewController.swift */,
+				52F8229E1E899D1D0084E508 /* AddThemeTableViewController.swift */,
 				82C6077D1E4833AC009E614A /* TabBarViewController.swift */,
 				82C607811E4842FC009E614A /* ColorPickerViewController.swift */,
+				52F8229C1E89915E0084E508 /* ThemesTableViewController.swift */,
 			);
 			path = "Music Lamp";
 			sourceTree = "<group>";
@@ -360,13 +375,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				82C6077C1E483097009E614A /* AlarmsTableViewController.swift in Sources */,
+				52F8229F1E899D1D0084E508 /* AddThemeTableViewController.swift in Sources */,
+				52F8229D1E89915E0084E508 /* ThemesTableViewController.swift in Sources */,
 				82C607821E4842FC009E614A /* ColorPickerViewController.swift in Sources */,
+				52F822991E898F670084E508 /* ThemeTableViewCell.swift in Sources */,
+				52F8229B1E89909A0084E508 /* Theme.swift in Sources */,
 				82E41DF31E524BA1002E7A94 /* AlarmsNavigationController.swift in Sources */,
 				822002851E52C3320099627F /* AddAlarmTableViewController.swift in Sources */,
 				82279DC61E5231D20036436D /* Alarm.swift in Sources */,
 				82C9962D1E4023C000C8FB62 /* AppDelegate.swift in Sources */,
 				82C6077E1E4833AC009E614A /* TabBarViewController.swift in Sources */,
 				82279DC41E522DB60036436D /* AlarmTableViewCell.swift in Sources */,
+				52F25ECC1E91A47E00855BF7 /* AddThemeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
