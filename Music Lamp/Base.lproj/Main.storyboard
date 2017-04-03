@@ -466,43 +466,6 @@
             </objects>
             <point key="canvasLocation" x="1725.5999999999999" y="721.88905547226398"/>
         </scene>
-        <!--Add Theme View Controller-->
-        <scene sceneID="Lqa-QD-lEd">
-            <objects>
-                <viewController id="Dua-Wi-XHI" customClass="AddThemeViewController" customModule="Music_Lamp" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="DoD-Cf-X9E"/>
-                        <viewControllerLayoutGuide type="bottom" id="FoE-de-lEp"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="MOl-1h-fZR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6e5-c6-Xnt" customClass="SwiftHSVColorPicker" customModule="SwiftHSVColorPicker">
-                                <rect key="frame" x="8" y="72" width="359" height="433"/>
-                                <color key="backgroundColor" red="1" green="0.1107546368" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSh-dZ-Nql">
-                                <rect key="frame" x="16" y="513" width="81" height="30"/>
-                                <state key="normal" title="Pick a Song"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="6e5-c6-Xnt" firstAttribute="top" secondItem="DoD-Cf-X9E" secondAttribute="bottom" constant="8" symbolic="YES" id="OjT-og-aBp"/>
-                            <constraint firstItem="wSh-dZ-Nql" firstAttribute="leading" secondItem="MOl-1h-fZR" secondAttribute="leadingMargin" id="fCw-Ss-Xfh"/>
-                            <constraint firstItem="wSh-dZ-Nql" firstAttribute="top" secondItem="6e5-c6-Xnt" secondAttribute="bottom" constant="8" symbolic="YES" id="huN-2C-dC6"/>
-                            <constraint firstItem="FoE-de-lEp" firstAttribute="top" secondItem="wSh-dZ-Nql" secondAttribute="bottom" constant="124" id="kUS-jP-ahR"/>
-                            <constraint firstItem="6e5-c6-Xnt" firstAttribute="centerX" secondItem="MOl-1h-fZR" secondAttribute="centerX" id="mT0-KD-gBH"/>
-                            <constraint firstItem="6e5-c6-Xnt" firstAttribute="leading" secondItem="MOl-1h-fZR" secondAttribute="leadingMargin" constant="-8" id="ncY-mY-6OQ"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="kUw-ac-gys"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wgu-0H-84B" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3237.5999999999999" y="722.78860569715152"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="j6w-On-tHA">
             <objects>
@@ -518,12 +481,66 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Dua-Wi-XHI" kind="relationship" relationship="rootViewController" id="XdI-jr-pz2"/>
+                        <segue destination="R3x-MU-HwV" kind="relationship" relationship="rootViewController" id="adK-w1-n7n"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eVa-h6-YGl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2487" y="723"/>
+        </scene>
+        <!--Lights-->
+        <scene sceneID="3GG-z1-Sp4">
+            <objects>
+                <viewController id="R3x-MU-HwV" customClass="AddThemeViewController" customModule="Music_Lamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QTo-ij-6AD"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZsP-dP-HVD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8l4-30-NyM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ore-xo-G6M" customClass="SwiftHSVColorPicker" customModule="SwiftHSVColorPicker">
+                                <rect key="frame" x="8" y="64" width="359" height="384"/>
+                                <color key="backgroundColor" red="1" green="0.1107546368" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3dK-oF-2VL">
+                                <rect key="frame" x="8" y="456" width="115" height="56"/>
+                                <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="6HE-cm-Bww"/>
+                                    <constraint firstAttribute="width" constant="115" id="zMN-rr-sOs"/>
+                                </constraints>
+                                <state key="normal" title="Pick a Song">
+                                    <color key="titleColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pickSongButtonPressed:" destination="R3x-MU-HwV" eventType="touchUpInside" id="k4g-n8-iDp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22355468749999999" green="0.22355468749999999" blue="0.22355468749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ore-xo-G6M" firstAttribute="centerX" secondItem="8l4-30-NyM" secondAttribute="centerX" id="4no-jz-b0T"/>
+                            <constraint firstItem="ore-xo-G6M" firstAttribute="top" secondItem="QTo-ij-6AD" secondAttribute="bottom" id="YdP-yg-n5c"/>
+                            <constraint firstItem="ore-xo-G6M" firstAttribute="leading" secondItem="8l4-30-NyM" secondAttribute="leadingMargin" constant="-8" id="bUF-Lq-fLa"/>
+                            <constraint firstItem="ZsP-dP-HVD" firstAttribute="top" secondItem="3dK-oF-2VL" secondAttribute="bottom" constant="155" id="ovw-dp-LlI"/>
+                            <constraint firstItem="ore-xo-G6M" firstAttribute="leading" secondItem="3dK-oF-2VL" secondAttribute="leading" id="rCA-C8-2io"/>
+                            <constraint firstItem="3dK-oF-2VL" firstAttribute="top" secondItem="ore-xo-G6M" secondAttribute="bottom" constant="8" symbolic="YES" id="wRN-jd-1t0"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lights" id="puC-Qn-deh">
+                        <barButtonItem key="rightBarButtonItem" image="gear-7" id="me7-wP-ezr">
+                            <color key="tintColor" red="0.99607843139999996" green="0.57924032209999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="colorPicker" destination="ore-xo-G6M" id="wkg-dR-cjV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u9Z-Vj-uy4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3204" y="722"/>
         </scene>
     </scenes>
     <resources>
