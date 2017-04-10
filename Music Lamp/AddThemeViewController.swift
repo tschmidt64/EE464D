@@ -81,13 +81,27 @@ extension AddThemeViewController : MPMediaPickerControllerDelegate {
     // must implement these, as there is no automatic dismissal
     
     func mediaPicker(_ mediaPicker: MPMediaPickerController, didPickMediaItems mediaItemCollection: MPMediaItemCollection) {
-        /* Trying to get this to work so I can write the song to a file
+//        Trying to get this to work so I can write the song to a file 
+        /*
         guard let song = mediaItemCollection.items.first else { return }
         guard let url = song.assetURL else { return }
         let songAsset = AVURLAsset(url: url)
         let documents = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
-        let exportFilePathStr = URL(fileURLWithPath: documents).appendingPathComponent("exported.m4a")
-        let exporter = AVAssetExportSession(asset: songAsset, presetName: AVAssetExportPresetAppleM4A)
+        let exportFileURL = URL(fileURLWithPath: documents).appendingPathComponent("exported.m4a")
+        guard let exporter = AVAssetExportSession(asset: songAsset, presetName: AVAssetExportPresetAppleM4A) else { return }
+        exporter.outputURL = exportFileURL
+        exporter.outputFileType = "com.microsoft.waveform-audio"
+        exporter.exportAsynchronously {
+            let status = exporter.status
+            print("Export completed with status \(status)")
+            if status == .failed {
+                if let error = exporter.error {
+                    print("ERROR: \(error)")
+                } else {
+                    print("ERROR: but I can't show you the error b/c it wouldn't unwrap")
+                }
+            }
+        }
         */
         print("did pick")
         let player = MPMusicPlayerController.applicationMusicPlayer()

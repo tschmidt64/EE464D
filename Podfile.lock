@@ -1,15 +1,18 @@
 PODS:
   - iOS-color-wheel (0.1)
   - SwiftHSVColorPicker (1.1.1)
+  - SwiftHTTP (2.0.2)
 
 DEPENDENCIES:
   - iOS-color-wheel (~> 0.1)
   - SwiftHSVColorPicker
+  - SwiftHTTP (~> 2.0.0)
 
 SPEC CHECKSUMS:
   iOS-color-wheel: 60d441600bd62d58250a915719b84ed89283ce95
   SwiftHSVColorPicker: 69c9028dea168e0f8ee2439d31a899cf1df95678
+  SwiftHTTP: faa1a5f7670568ffc9361898229dbe84a6088468
 
-PODFILE CHECKSUM: 496a1a389df085f5ac112a78c772712fa8170a44
+PODFILE CHECKSUM: 2c1991ad2fe7ee2aca741a4dceb7bc505f77043e
 
 COCOAPODS: 1.2.0
