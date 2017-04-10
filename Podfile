@@ -7,4 +7,5 @@ target 'Music Lamp' do
   pod 'SwiftHSVColorPicker'
   pod 'iOS-color-wheel', '~> 0.1'
   pod 'SwiftHTTP', '~> 2.0.0'
+  pod 'SwiftSocket'
 end
